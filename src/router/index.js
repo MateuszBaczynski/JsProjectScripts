@@ -13,7 +13,7 @@ const router = new Router({
       component: Home
     },
     {
-      path: "/",
+      path: "/Scripts",
       name: "Scripts",
       component: Scripts
     }

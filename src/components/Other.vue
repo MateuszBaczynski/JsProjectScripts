@@ -2,17 +2,17 @@
   <div class="container">
     <div class="col">
       <div class="heroText">
-        <h1>Home</h1>
+        <h1>Other</h1>
       </div>
-      <div class="linksContainerMain">
+      <div>
         <div class="linkContainer">
-          <router-link to="/Scripts" class="styledLink">
-            Scripts
+          <router-link to="/" class="styledLink">
+            Home
           </router-link>
         </div>
         <div class="linkContainer">
-          <router-link to="/Other" class="styledLink">
-            Other
+          <router-link to="/Scripts" class="styledLink">
+            Scripts
           </router-link>
         </div>
       </div>

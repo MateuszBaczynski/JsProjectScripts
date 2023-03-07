@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="blumHeader"><span>Blum</span></header>
+    <!--<header class="blumHeader"><span>Blum</span></header>-->
     <router-view />
   </div>
 </template>
@@ -21,6 +21,10 @@ html,
 body {
   margin: 0px;
 }
+a {
+  margin: 0px;
+  text-decoration: none;
+}
 #app {
   font-family: Montserrat, sans-serif;
   text-align: center;
@@ -31,12 +35,36 @@ body {
 h1 {
   font-size: 45px;
   font-weight: 500;
+  color: rgba(255, 255, 255, 1);
 }
 .styledLink {
-  color: Blue;
+  color: black;
   text-decoration: none;
-  margin: 1rem;
   position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkContainer {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s;
+}
+.linkContainer:hover {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.linksContainerMain {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .container {
   z-index: 0;
@@ -83,5 +111,13 @@ h1 {
   color: rgba(255, 255, 255, 1);
   text-align: center;
   text-shadow: -1px -1px black;
+}
+.heroText > h1 {
+  display: flex;
+}
+.heroText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
